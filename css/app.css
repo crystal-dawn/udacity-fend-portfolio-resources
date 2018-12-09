@@ -2,6 +2,9 @@ body {
   box-sizing: border-box;
   max-width: 100%;
   margin: 0;
+  background-color: #2196f3;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .page-header {
@@ -11,11 +14,9 @@ body {
 }
 
 .container {
-  display: flex;
   min-height: 100vh;
-  background-color: #2196f3;
+  display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
 }
 
 .requirement-header {
@@ -27,8 +28,6 @@ body {
 
 .resource {
   margin: 2%;
-  min-height: 15vh;
-  max-width: 300px;
   border: 2px groove #546E7A;
   border-radius: 5px;
   box-shadow: 2px 1px 10px #819ca9;
@@ -42,8 +41,8 @@ body {
 .requirements {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: space-around;
+  margin: 0 5%;
 }
 
 .requirement {
@@ -55,13 +54,12 @@ body {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  margin: 5%;
+  margin: 1% 1vw;
 }
 
 .resource:hover {
   background-color: #2196F3;
 }
-
 
 .type {
   display: flex;
