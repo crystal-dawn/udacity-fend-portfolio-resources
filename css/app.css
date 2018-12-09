@@ -26,15 +26,21 @@ body {
 }
 
 .resource {
+  margin: 2%;
+  min-height: 15vh;
   max-width: 300px;
   border: 2px groove #546E7A;
   background-color: #819ca9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .requirements {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: space-between;
 }
 
@@ -46,6 +52,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
+  margin: 5%;
 }
 
 .resource:hover {
