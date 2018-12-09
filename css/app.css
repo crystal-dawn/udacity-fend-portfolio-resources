@@ -61,3 +61,18 @@ body {
 .resource:hover {
   background-color: #2196F3;
 }
+
+
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid mistyrose;
+  width: 100%;
+}
+
+.type-header {
+  min-width: 100%;
+  background: #dceffd;
+  margin: 0;
+}
