@@ -1,7 +1,8 @@
 body {
+  font-family: monospace;
+  overflow-x: hidden;
   max-width: 100%;
   background-color: #2196f3;
-  overflow-x: hidden;
 }
 
 .container {
@@ -10,10 +11,12 @@ body {
 }
 
 .page-header {
-  margin: 0;
+  font-size: 3em;
   width: 100vw;
-  background-color: #0069c0;
+  margin: 0;
   text-align: center;
+  color: #e1f5fe;
+  background-color: #0069c0;
 }
 
 /** Requirement Container **/
@@ -24,20 +27,42 @@ body {
 }
 
 .requirement-header {
-  width: 100%;
+  font-size: 1.7em;
   margin: 0;
-  color: #fff;
+  padding: 0;
+  color: #e1f5fe;
   background-color: #29434e;
 }
 
 .requirement {
+  margin: 1%;
   text-align: center;
   border: 1px solid black;
   border-radius: 5px;
   background-color: white;
+}
+
+.type-header {
+  font-size: 1.4em;
+  margin: 0;
+  color: #29434e;
+  background-color: #e1f5fe;
+}
+
+.resource {
+  font-family: Arial;
   margin: 1%;
+  border: 2px groove #29434e;
+  border-radius: 5px;
+  background-color: #6ec6ff;
+  box-shadow: 2px 1px 6px #29434e;
 }
 
 .resource:hover {
   background-color: #2196f3;
+}
+
+.link {
+  text-decoration: none;
+  color: #29434e;
 }
