@@ -30,6 +30,8 @@ body {
   min-height: 15vh;
   max-width: 300px;
   border: 2px groove #546E7A;
+  border-radius: 5px;
+  box-shadow: 2px 1px 10px #819ca9;
   background-color: #819ca9;
   display: flex;
   flex-direction: column;
