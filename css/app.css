@@ -1,0 +1,16 @@
+body {
+  max-width: 100%;
+}
+
+.page-header {
+  background-color: #0069c0;
+}
+
+.container {
+  background-color: #2196F3;
+}
+
+.requirement-header {
+  background-color: #29434e;
+  color: #fff;
+}
