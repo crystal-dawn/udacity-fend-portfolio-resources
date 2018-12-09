@@ -1,8 +1,17 @@
+:root {
+  --primary-color: #2196f3;
+  --primary-color-light: #6ec6ff;
+  --primary-color-dark: #0069c0;
+  --secondary-color: #263238;
+  --secondary-color-light: #4f5b62;
+  --secondary-color-dark: #000a12;
+}
+
 body {
   font-family: monospace;
   overflow-x: hidden;
   max-width: 100%;
-  background-color: #2196f3;
+  background-color: var(--primary-color);
 }
 
 .container {
@@ -13,7 +22,7 @@ body {
 /* nav container */
 .nav {
   overflow: hidden;
-  background-color: #6ec6ff;
+  background-color: var(--primary-color-light);
   font-family: Arial;
 }
 
@@ -47,14 +56,15 @@ body {
 
 /* Add a red background color to nav links on hover */
 .nav a:hover, .dropdown:hover .dropbtn {
-  background-color: #2196f3;
+  background-color: var(--secondary-color-dark);
+
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -71,7 +81,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #e1f5fe;
+  background-color: var(--secondary-color-light);
 }
 
 /* Show the dropdown menu on hover */
@@ -84,8 +94,8 @@ body {
   width: 100vw;
   margin: 0;
   text-align: center;
-  color: #e1f5fe;
-  background-color: #0069c0;
+  color: white;
+  background-color: var(--primary-color-dark);
 }
 
 /** Requirement Container **/
@@ -99,8 +109,9 @@ body {
   font-size: 1.7em;
   margin: 0;
   padding: 0;
-  color: #e1f5fe;
-  background-color: #29434e;
+  color: var(--primary-color-light);
+  mix-blend-mode: hard-light;
+  background-color: var(--secondary-color-dark);
 }
 
 .requirement {
@@ -114,24 +125,27 @@ body {
 .type-header {
   font-size: 1.4em;
   margin: 0;
-  color: #29434e;
-  background-color: #e1f5fe;
+  font-weight: 800;
+  color: var(--secondary-color-dark);
+  background-color: var(--primary-color-light);
+  opacity: .9;
+  mix-blend-mode: hard-light;
 }
 
 .resource {
   font-family: Arial;
   margin: 1%;
-  border: 2px groove #29434e;
+  border: 2px groove var(--secondary-color-dark);
   border-radius: 5px;
-  background-color: #6ec6ff;
-  box-shadow: 2px 1px 6px #29434e;
+  background-color: var(--primary-color-light);
+  box-shadow: 2px 1px 6px var(--secondary-color-light);
 }
 
 .resource:hover {
-  background-color: #2196f3;
+  background-color: var(--primary-color);
 }
 
 .link {
   text-decoration: none;
-  color: #29434e;
+  color: var(--secondary-color-dark);
 }
