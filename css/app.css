@@ -1,22 +1,26 @@
 body {
-  box-sizing: border-box;
   max-width: 100%;
-  margin: 0;
   background-color: #2196f3;
-  overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.page-header {
-  width: 100vw;
-  margin: 0;
-  background-color: #0069c0;
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
 }
 
-.container {
-  min-height: 100vh;
+.page-header {
+  margin: 0;
+  width: 100vw;
+  background-color: #0069c0;
+  text-align: center;
+}
+
+/** Requirement Container **/
+.requirements {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .requirement-header {
@@ -26,50 +30,14 @@ body {
   background-color: #29434e;
 }
 
-.resource {
-  margin: 2%;
-  border: 2px groove #546E7A;
-  border-radius: 5px;
-  box-shadow: 2px 1px 10px #819ca9;
-  background-color: #819ca9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.requirements {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 5%;
-}
-
 .requirement {
-  display: flex;
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid black;
-  flex-wrap: wrap;
-  justify-content: space-between;
   text-align: center;
-  align-items: center;
-  margin: 1% 1vw;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  margin: 1%;
 }
 
 .resource:hover {
-  background-color: #2196F3;
-}
-
-.type {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-
-.type-header {
-  min-width: 100%;
-  background: #dceffd;
-  margin: 0;
+  background-color: #2196f3;
 }
