@@ -12,30 +12,42 @@ body {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   min-height: 100vh;
   background-color: #2196f3;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .requirement-header {
-  color: #fff;
-  background-color: #29434e;
   width: 100%;
   margin: 0;
+  color: #fff;
+  background-color: #29434e;
 }
 
 .resource {
   max-width: 300px;
+  border: 2px groove #546E7A;
+  background-color: #819ca9;
 }
 
 .requirements {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
+  justify-content: space-around;
+  align-content: space-between;
 }
+
 .requirement {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  background-color: white;
+  border-radius: 5px;
   border: 1px solid black;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.resource:hover {
+  background-color: #2196F3;
 }
