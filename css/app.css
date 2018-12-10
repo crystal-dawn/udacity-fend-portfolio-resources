@@ -3,7 +3,7 @@
   --primary-color-light: #6ec6ff;
   --primary-color-dark: #0069c0;
   --secondary-color: #263238;
-  --secondary-color-light: #4f5b62;
+  --secondary-color-light: #e0e0e0;
   --secondary-color-dark: #000a12;
 }
 
@@ -11,7 +11,8 @@ body {
   font-family: monospace;
   overflow-x: hidden;
   max-width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color-light);
+  mix-blend-mode:soft-light;
 }
 
 .container {
