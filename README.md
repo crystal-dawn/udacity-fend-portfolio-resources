@@ -1,4 +1,4 @@
-# [Build Your Portfolio](https://crystal-dawn.github.io/udacity-fend-p1-resources/)
+# [Build Your Portfolio](https://crystal-dawn.github.io/udacity-fend-portfolio-resources/)
 
 ## Overview
 This is a collection of resources that were shared over Slack during the 2018 Grow with Google Scholarship for the Udacity Front-End Nanodegree Program.
