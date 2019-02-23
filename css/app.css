@@ -44,14 +44,9 @@ body {
 /*******************************************************************************
                     Sticky Top Navigation - Project Resources
 *******************************************************************************/
-/***************
- Navigation bar
-***************/
+/* Set top navigation to stick below page header */
 .top-nav {
-  font-family: Arial;
-  position: sticky;
   top: 5%;
-  background-color: var(--primary-color-light);
 }
 
 /************************
@@ -64,7 +59,6 @@ body {
 
 .dropdown-button {
   /* Important for vertical align on mobile phones */
-  /* font-family: inherit; */
   margin: 0;
   padding: 2%;
   color: var(--secondary-color-dark);
@@ -101,7 +95,7 @@ body {
 }
 
 /*******************************************************************************
-                                All Navigation
+                          Shared Navigation Styles
 *******************************************************************************/
 /*************************
  Highlight links on hover
@@ -124,4 +118,20 @@ body {
   text-align: center;
   text-decoration: none;
   color: var(--secondary-color);
+}
+
+/* Top and bottom navigation general styles */
+.top-nav,
+.bottom-nav {
+  font-family: Arial;
+  position: sticky;
+  background-color: var(--primary-color-light);
+}
+
+/*******************************************************************************
+              Bottom Navigation - General Resources & Contribution
+*******************************************************************************/
+/* Keep navigation at the bottom of the page */
+.bottom-nav {
+  bottom: 0;
 }
