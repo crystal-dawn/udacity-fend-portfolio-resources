@@ -33,10 +33,28 @@ body {
   /* Sticky header */
   position: fixed;
   width: 100vw;
-  /* Declare height to support navigation positioning for sticky navigation */
+  /* Declare height to support navigation positioning for sticky top-nav */
   height: 5%;
   margin: 0;
   text-align: center;
   color: white;
   background-color: var(--primary-color-dark);
 }
+
+
+/*******************************************************************************
+                    Sticky Top Navigation - Project Resources
+*******************************************************************************/
+/***************
+ Navigation bar
+***************/
+.top-nav {
+  position: sticky;
+  top: 5%;
+  background-color: var(--primary-color-light);
+  font-family: Arial;
+}
+
+/************************
+ Resources Dropdown Menu
+************************/
