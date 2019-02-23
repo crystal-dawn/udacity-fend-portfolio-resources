@@ -51,7 +51,7 @@ body {
 }
 
 /************************
- Resources Dropdown Menu
+ Criteria Dropdown Menu
 ************************/
 .dropdown {
   font-size: 1em;
@@ -137,11 +137,6 @@ body {
   padding: 1% 0;
 }
 
-/* Hide extra external resources in mobile view due to size constraints */
-.hide {
-  visibility: hidden;
-}
-
 .show {
   position: absolute;
   padding: 1% 5% 0 5%;
@@ -152,4 +147,72 @@ body {
 
 .right {
   right: 0;
+}
+
+/* Hide extra external resources in mobile view due to size constraints */
+.hide {
+  visibility: hidden;
+}
+
+/*******************************************************************************
+                            Criteria resource cards
+*******************************************************************************/
+/**********************
+ Requirement Container
+**********************/
+.requirements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.requirement-header {
+  font-size: 1.7em;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color-light);
+  mix-blend-mode: hard-light;
+  background-color: var(--secondary-color-dark);
+}
+
+.requirement {
+  margin: 1%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/****************
+ Type subsection
+****************/
+.type-header {
+  font-size: 1.4em;
+  margin: 0;
+  font-weight: 800;
+  color: var(--secondary-color-dark);
+  background-color: var(--primary-color-light);
+  opacity: .9;
+  mix-blend-mode: hard-light;
+}
+
+/**************
+ Resource link
+**************/
+.resource {
+  font-family: Arial;
+  margin: 1%;
+  border: 2px groove var(--secondary-color-dark);
+  border-radius: 5px;
+  background-color: var(--primary-color-light);
+  box-shadow: 2px 1px 6px var(--secondary-color-light);
+}
+
+.resource:hover {
+  background-color: var(--primary-color);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--secondary-color-dark);
 }
