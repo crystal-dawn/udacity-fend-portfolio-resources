@@ -158,15 +158,15 @@ body {
                             Criteria resource cards
 *******************************************************************************/
 /**********************
- Requirement Container
+ Criteria Container
 **********************/
-.requirements {
+.criterias {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.requirement-header {
+.criteria-header {
   font-size: 1.7em;
   margin: 0;
   padding: 0;
@@ -175,7 +175,7 @@ body {
   mix-blend-mode: hard-light;
 }
 
-.requirement {
+.criteria {
   margin: 1%;
   text-align: center;
   border: 1px solid black;
@@ -212,7 +212,7 @@ body {
   background-color: var(--primary-color);
 }
 
-.link {
+.resource-link {
   text-decoration: none;
   color: var(--secondary-color-dark);
 }
