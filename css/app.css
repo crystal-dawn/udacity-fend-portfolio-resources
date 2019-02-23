@@ -138,11 +138,11 @@ body {
 }
 
 .show {
-  position: absolute;
-  padding: 1% 5% 0 5%;
   font-size: 1.95em;
-  color: black;
+  position: absolute;
   bottom: 0;
+  padding: 1% 5% 0 5%;
+  color: black;
 }
 
 .right {
@@ -171,8 +171,8 @@ body {
   margin: 0;
   padding: 0;
   color: var(--primary-color-light);
-  mix-blend-mode: hard-light;
   background-color: var(--secondary-color-dark);
+  mix-blend-mode: hard-light;
 }
 
 .requirement {
@@ -188,11 +188,11 @@ body {
 ****************/
 .type-header {
   font-size: 1.4em;
-  margin: 0;
   font-weight: 800;
+  margin: 0;
+  opacity: .9;
   color: var(--secondary-color-dark);
   background-color: var(--primary-color-light);
-  opacity: .9;
   mix-blend-mode: hard-light;
 }
 
