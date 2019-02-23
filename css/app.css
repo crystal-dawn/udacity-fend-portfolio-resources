@@ -26,6 +26,7 @@ body {
 .container {
   max-width: 100vw;
   min-height: 100vh;
+  nax-height: 100vh;
 }
 
 .page-header {
@@ -97,15 +98,6 @@ body {
 /*******************************************************************************
                           Shared Navigation Styles
 *******************************************************************************/
-/*************************
- Highlight links on hover
-*************************/
-.top-nav .nav-link:hover,
-.dropdown:hover .dropdown-button {
-  color: white;
-  background-color: var(--secondary-color);
-}
-
 /*********************************
  Consistent navigation link style
 *********************************/
@@ -120,7 +112,16 @@ body {
   color: var(--secondary-color);
 }
 
-/* Top and bottom navigation general styles */
+.top-nav .nav-link:hover,
+.dropdown:hover .dropdown-button,
+.bottom-nav .nav-link:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+/*****************************************
+ Top and bottom navigation general styles
+*****************************************/
 .top-nav,
 .bottom-nav {
   font-family: Arial;
@@ -131,7 +132,24 @@ body {
 /*******************************************************************************
               Bottom Navigation - General Resources & Contribution
 *******************************************************************************/
-/* Keep navigation at the bottom of the page */
 .bottom-nav {
   bottom: 0;
+  padding: 1% 0;
+}
+
+/* Hide extra external resources in mobile view due to size constraints */
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  position: absolute;
+  padding: 1% 5% 0 5%;
+  font-size: 1.95em;
+  color: black;
+  bottom: 0;
+}
+
+.right {
+  right: 0;
 }
