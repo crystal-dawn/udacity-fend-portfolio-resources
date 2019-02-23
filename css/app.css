@@ -40,6 +40,7 @@ body {
   text-align: center;
   color: white;
   background-color: var(--primary-color-dark);
+  z-index: 1;
 }
 
 /*******************************************************************************
@@ -48,6 +49,7 @@ body {
 /* Set top navigation to stick below page header */
 .top-nav {
   top: 5%;
+  z-index: 1;
 }
 
 /************************
@@ -212,7 +214,7 @@ body {
   background-color: var(--primary-color);
 }
 
-.resource-link {
+.link {
   text-decoration: none;
   color: var(--secondary-color-dark);
 }
