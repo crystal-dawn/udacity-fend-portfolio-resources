@@ -41,7 +41,6 @@ body {
   background-color: var(--primary-color-dark);
 }
 
-
 /*******************************************************************************
                     Sticky Top Navigation - Project Resources
 *******************************************************************************/
@@ -49,12 +48,80 @@ body {
  Navigation bar
 ***************/
 .top-nav {
+  font-family: Arial;
   position: sticky;
   top: 5%;
   background-color: var(--primary-color-light);
-  font-family: Arial;
 }
 
 /************************
  Resources Dropdown Menu
 ************************/
+.dropdown {
+  font-size: 1em;
+  overflow: hidden;
+}
+
+.dropdown-button {
+  /* Important for vertical align on mobile phones */
+  /* font-family: inherit; */
+  margin: 0;
+  padding: 2%;
+  color: var(--secondary-color-dark);
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.dropdown-content {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  color: var(--secondary-color-dark);
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.dropdown-content .dropdown-link {
+  display: block;
+  float: none;
+  text-align: left;
+  text-decoration: none;
+}
+
+.dropdown-link:hover {
+  color: var(--secondary-color-dark);
+  background-color: var(--primary-color-light);
+  mix-blend-mode: hard-light;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*******************************************************************************
+                                All Navigation
+*******************************************************************************/
+/*************************
+ Highlight links on hover
+*************************/
+.top-nav .nav-link:hover,
+.dropdown:hover .dropdown-button {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+/*********************************
+ Consistent navigation link style
+*********************************/
+.top-nav .nav-link,
+.dropdown-link {
+  font-size: .95em;
+  float: left;
+  /* Keep link close to 48px on mobile view so it's easily tappable */
+  padding: 3%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
