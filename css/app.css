@@ -28,39 +28,45 @@ body {
 }
 
 .page-header {
-  font-size: 2em;
+  font-size: 3em;
   /* Sticky header */
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   /* Declare height to support navigation positioning for sticky top-nav */
-  height: 5%;
+  height: 3vh;
   margin: 0;
   text-align: center;
   color: white;
-  background-color: var(--primary-color-dark);
+  background-image: linear-gradient(to bottom, #2196f3, #2599f4, #2a9cf5, #2e9ff5, #33a2f6);
 }
 
 /***** Sticky Top Navigation - Project Resources ******/
 /* Set top navigation to stick below page header */
 .top-nav {
-  z-index: 1;
-  top: 5%;
   font-size: .85rem;
+  z-index: 1;
+  top: 2vh;
+  height: 5.5vh;
+  background-image: linear-gradient(to bottom, #2a9cf5, #3aa7f7, #4bb1f9, #5cbcfb, #6ec6fc);
 }
 
 /************************
  Criteria Dropdown Menu
 ************************/
+.criteria-list {
+  list-style: none;
+}
+
 .dropdown {
-  font-size: 1em;
   overflow: hidden;
 }
 
 .dropdown-button {
   /* Important for vertical align on mobile phones */
   margin: 0;
-  padding: 1% 2%;
+  padding: 1% 3%;
+  height: 100%;
   color: var(--secondary-color-dark);
   border: none;
   outline: none;
@@ -69,7 +75,9 @@ body {
 
 .dropdown-content {
   position: absolute;
+  margin-top: 1%;
   z-index: 1;
+  top: 3.5vh;
   display: none;
   color: var(--secondary-color-dark);
   background-color: white;
@@ -106,14 +114,15 @@ body {
   padding: 3%;
   text-align: center;
   text-decoration: none;
-  color: var(--secondary-color);
 }
 
 .top-nav .nav-link:hover,
-.dropdown:hover .dropdown-button,
+.dropdown-button:hover,
 .bottom-nav .nav-link:hover {
   color: white;
   background-color: var(--secondary-color);
+  height: 100%;
+  mix-blend-mode: saturation;
 }
 
 /****** Top and bottom navigation general styles *****/
@@ -127,8 +136,8 @@ body {
 /***************** Bottom Navigation *****************/
 .bottom-nav {
   bottom: 0;
+  height: 5vh;
   padding: 1% 0;
-  height: 6vh;
 }
 
 .bottom-content {
@@ -155,7 +164,7 @@ body {
 .criterias {
   position: relative;
   /* First criteria card shows up below top navigation section */
-  top: 45px;
+  top: 3vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -164,18 +173,22 @@ body {
 .criteria-header {
   font-size: 1.7em;
   margin: 0;
-  padding: 0;
-  color: var(--primary-color-light);
-  background-color: var(--secondary-color-dark);
-  mix-blend-mode: hard-light;
+  padding: 1vh;
+  color: var(--secondary-color-light);
+  background-color: var(--primary-color-dark);
+  mix-blend-mode: multiply;
+  white-space: pre;
+  border-radius: 5px 5px 0 0;
 }
 
 .criteria {
+  box-shadow: 4px 4px 5px 1px rgba(38,50,56,0.39);
   margin: 1%;
   text-align: center;
   border: 1px solid black;
   border-radius: 5px;
   background-color: white;
+  align-self: center;
 }
 
 /* Keep last card from being beneath the bottom nav */
@@ -189,21 +202,21 @@ body {
   font-weight: 800;
   margin: 0;
   opacity: .9;
-  color: var(--secondary-color-dark);
-  background-color: var(--primary-color-light);
+  color: var(--secondary-color-light);
+  background-color: var(--secondary-color);
   mix-blend-mode: hard-light;
 }
 
 /******************* Resource link *******************/
 .resource {
   font-family: Arial;
+  display: inline-flex;
   margin: 1%;
-  padding: 1%;
-  background-color: white;
+  padding: 2% 3%;
   border: 2px groove var(--secondary-color-light);
   border-radius: 5px;
+  background-color: white;
   box-shadow: 2px 1px 6px var(--secondary-color-light);
-  display: inline-flex;
 }
 
 .resource:hover {
@@ -224,16 +237,6 @@ body {
 /******************************************************
                 Anchor link positioning
 ******************************************************/
-#ctn1,
-#ctn2,
-#ctn3,
-#ctn4,
-#ctn5,
-#ctn6 {
-  position: relative;
-  height: auto;
-}
-
 /* Keep clicked link header below the top navigation section */
 #ctn1 a,
 #ctn2 a,
@@ -243,6 +246,7 @@ body {
 #ctn6 a {
   position: absolute;
   top: -75px;
+  visibility: hidden;
 }
 
 /*******************************************************************************
@@ -251,6 +255,8 @@ body {
 @media only screen and (min-width: 426px) {
 
   /* Keep clicked link header below the top navigation section */
+  /* TODO: Dynamically create this so that it works with the length of the
+  criteria */
   #ctn1 a,
   #ctn2 a,
   #ctn3 a,
@@ -267,6 +273,8 @@ body {
 
   .bottom-nav {
     display: flex;
+    max-height: 6vh;
+    padding-top: 0;
     justify-content: space-around;
   }
 
@@ -298,7 +306,7 @@ body {
   #ctn4 a,
   #ctn5 a,
   #ctn6 a {
-  top: -90px;
+    top: -90px;
   }
 
   /* Increase size of home icon without increasing link font size */
@@ -310,7 +318,7 @@ body {
     max-height: auto;
   }
 
-  .criteria:last-child{
+  .criteria:last-child {
     margin-bottom: 5%;
   }
 

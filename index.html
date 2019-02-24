@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTzYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -15,18 +15,18 @@
     <header>
       <h1 class="page-header">Build Your Portfolio</h1>
     </header>
-    <nav class="top-nav nav-link">
+    <nav class="top-nav nav-link" aria-labelledby="criteriaButton">
       <span class="dropdown">
-        <button class="dropdown-button">Criteria</button>
-        <span class="dropdown-content">
-          <a class="dropdown-link" href="#firstCriteria">Required Elements/Custom Design</a>
-          <a class="dropdown-link" href="#secondCriteria">Grid-Based Layout</a>
-          <a class="dropdown-link" href="#thirdCriteria">Semantic HTML</a>
-          <a class="dropdown-link" href="#fourthCriteria">Cross-Browser Compatibility</a>
-          <a class="dropdown-link" href="#fifthCriteria">Viewport meta Tag</a>
-          <a class="dropdown-link" href="#sixthCriteria">Responsive Images</a>
-          <a class="dropdown-link" href="https://review.udacity.com/#!/rubrics/45/view">Project Rubric</a>
-        </span>
+        <button class="dropdown-button" id="criteriaButton" aria-expanded="false">Criteria</button>
+        <ul class="dropdown-content" hidden>
+          <li class="criteria-list"><a class="dropdown-link" href="#firstCriteria">Required Elements/Custom Design</a></li>
+          <li class="criteria-list"><a class="dropdown-link" href="#secondCriteria">Grid-Based Layout</a></li>
+          <li class="criteria-list"><a class="dropdown-link" href="#thirdCriteria">Semantic HTML</a></li>
+          <li class="criteria-list"><a class="dropdown-link" href="#fourthCriteria">Cross-Browser Compatibility</a></li>
+          <li class="criteria-list"><a class="dropdown-link" href="#fifthCriteria">Viewport meta Tag</a></li>
+          <li class="criteria-list"><a class="dropdown-link" href="#sixthCriteria">Responsive Images</a></li>
+          <li class="criteria-list"><a class="dropdown-link" href="https://review.udacity.com/#!/rubrics/45/view">Project Rubric</a></li>
+        </ul>
       </span>
     </nav>
     <main class="criterias">
@@ -220,7 +220,7 @@
         </section>
       </section>
     </main>
-    <nav class="bottom-nav ">
+    <nav class="bottom-nav">
       <a class="bottom-content nav-link" href="http://tiny.cc/PortfolioProjectResources" aria-label="Home"><i class="fas fa-home tablet-font nav-link" aria-hidden="true"></i></a>
       <a class="bottom-content nav-link visibility" href="https://docs.google.com/document/d/1LyW8kIR2m5xAq5ngpB6jGN-hDO00pvI8jvW0-4f6sUI/edit?usp=sharing">Tips to Avoid Plagiarism</a>
       <a class="bottom-content nav-link visibility" href="http://tiny.cc/FENDLinkLibraries">All Project Resources</a>
