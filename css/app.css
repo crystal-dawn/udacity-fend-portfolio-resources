@@ -19,7 +19,6 @@ body {
   font-family: monospace;
   max-width: 100%;
   background-color: var(--secondary-color-light);
-  mix-blend-mode: soft-light;
 }
 
 .container {
@@ -132,7 +131,7 @@ body {
   height: 6vh;
 }
 
-.show {
+.bottom-content {
   font-size: 1.95em;
   position: absolute;
   bottom: 0;
@@ -145,7 +144,7 @@ body {
 }
 
 /* Hide extra external resources in mobile view due to size constraints */
-.hide {
+.visibility {
   visibility: hidden;
 }
 
@@ -199,14 +198,14 @@ body {
 .resource {
   font-family: Arial;
   margin: 1%;
+  background-color: white;
   border: 2px groove var(--secondary-color-dark);
   border-radius: 5px;
-  background-color: var(--primary-color-light);
   box-shadow: 2px 1px 6px var(--secondary-color-light);
 }
 
 .resource:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-light);
 }
 
 .resource-link {
@@ -252,6 +251,21 @@ body {
     position: absolute;
     top: -80px;
   }
-}
 
+  .visibility {
+    visibility: visible;
+  }
+
+  .bottom-content {
+    font-size: 1em;
+    position: relative;
+    text-decoration: none;
+  }
+
+  /* Increase size of home icon without increasing link font size */
+  .tablet-font {
+    font-size: 2em;
+  }
+
+}
 /*****************************************************/
