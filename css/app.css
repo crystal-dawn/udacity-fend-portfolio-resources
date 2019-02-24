@@ -1,9 +1,10 @@
 /*******************************************************************************
-                                  Main Layout
+                              Small Mobile Layout
 *******************************************************************************/
-/**********************
- Theme color variables
-**********************/
+/*****************************************************
+                     Main layout
+******************************************************/
+/*************** Theme color variables ***************/
 :root {
   --primary-color: #2196f3;
   --primary-color-light: #6ec6ff;
@@ -13,9 +14,7 @@
   --secondary-color-dark: #000a12;
 }
 
-/***************************************
- Responsive layout and basic page style
-***************************************/
+/****** Responsive layout and basic page style *******/
 body {
   font-family: monospace;
   max-width: 100%;
@@ -33,6 +32,7 @@ body {
   font-size: 2em;
   /* Sticky header */
   position: fixed;
+  z-index: 1;
   width: 100vw;
   /* Declare height to support navigation positioning for sticky top-nav */
   height: 5%;
@@ -40,16 +40,13 @@ body {
   text-align: center;
   color: white;
   background-color: var(--primary-color-dark);
-  z-index: 1;
 }
 
-/*******************************************************************************
-                    Sticky Top Navigation - Project Resources
-*******************************************************************************/
+/***** Sticky Top Navigation - Project Resources ******/
 /* Set top navigation to stick below page header */
 .top-nav {
-  top: 5%;
   z-index: 1;
+  top: 5%;
 }
 
 /************************
@@ -97,12 +94,10 @@ body {
   display: block;
 }
 
-/*******************************************************************************
-                          Shared Navigation Styles
-*******************************************************************************/
-/*********************************
- Consistent navigation link style
-*********************************/
+/******************************************************
+              Shared Navigation Styles
+******************************************************/
+/********** Consistent navigation link style *********/
 .top-nav .nav-link,
 .dropdown-link {
   font-size: .95em;
@@ -121,9 +116,7 @@ body {
   background-color: var(--secondary-color);
 }
 
-/*****************************************
- Top and bottom navigation general styles
-*****************************************/
+/****** Top and bottom navigation general styles *****/
 .top-nav,
 .bottom-nav {
   font-family: Arial;
@@ -131,9 +124,7 @@ body {
   background-color: var(--primary-color-light);
 }
 
-/*******************************************************************************
-              Bottom Navigation - General Resources & Contribution
-*******************************************************************************/
+/***************** Bottom Navigation *****************/
 .bottom-nav {
   bottom: 0;
   padding: 1% 0;
@@ -156,19 +147,17 @@ body {
   visibility: hidden;
 }
 
-/*******************************************************************************
-                            Criteria resource cards
-*******************************************************************************/
-/**********************
- Criteria Container
-**********************/
+/******************************************************
+                Criteria resource cards
+******************************************************/
+/**************** Criteria Container *****************/
 .criterias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   position: relative;
   /* First criteria card shows up below top navigation section */
   top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .criteria-header {
@@ -188,9 +177,7 @@ body {
   background-color: white;
 }
 
-/****************
- Type subsection
-****************/
+/****************** Type subsection ******************/
 .type-header {
   font-size: 1.4em;
   font-weight: 800;
@@ -201,9 +188,7 @@ body {
   mix-blend-mode: hard-light;
 }
 
-/**************
- Resource link
-**************/
+/******************* Resource link *******************/
 .resource {
   font-family: Arial;
   margin: 1%;
@@ -222,10 +207,9 @@ body {
   color: var(--secondary-color-dark);
 }
 
-
-/*******************************************************************************
-                            Anchor link positioning
-*******************************************************************************/
+/******************************************************
+                Anchor link positioning
+******************************************************/
 #ctn1,
 #ctn2,
 #ctn3,
@@ -242,7 +226,13 @@ body {
 #ctn3 a,
 #ctn4 a,
 #ctn5 a,
-#ctn6 a{
+#ctn6 a {
   position: absolute;
   top: -70px;
 }
+
+/*******************************************************************************
+                            Medium Mobile
+*******************************************************************************/
+@media only screen and (min-width: )
+/*****************************************************/
