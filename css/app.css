@@ -128,6 +128,7 @@ body {
 .bottom-nav {
   bottom: 0;
   padding: 1% 0;
+  height: 6vh;
 }
 
 .show {
@@ -175,6 +176,11 @@ body {
   border: 1px solid black;
   border-radius: 5px;
   background-color: white;
+}
+
+/* Keep last card from being beneath the bottom nav */
+.criteria:last-child {
+  margin-bottom: 15%;
 }
 
 /****************** Type subsection ******************/
@@ -228,11 +234,5 @@ body {
 #ctn5 a,
 #ctn6 a {
   position: absolute;
-  top: -70px;
+  top: -80px;
 }
-
-/*******************************************************************************
-                            Medium Mobile
-*******************************************************************************/
-@media only screen and (min-width: )
-/*****************************************************/
