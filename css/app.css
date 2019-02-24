@@ -241,6 +241,7 @@ body {
                             Tablet Layout
 *******************************************************************************/
 @media only screen and (min-width: 426px) {
+
   /* Keep clicked link header below the top navigation section */
   #ctn1 a,
   #ctn2 a,
@@ -256,6 +257,11 @@ body {
     visibility: visible;
   }
 
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .bottom-content {
     font-size: 1em;
     position: relative;
@@ -266,6 +272,31 @@ body {
   .tablet-font {
     font-size: 2em;
   }
-
 }
+
+/*******************************************************************************
+                            Laptop Layout
+*******************************************************************************/
+@media only screen and (min-width: 769px) {
+
+  /* Keep clicked link header below the top navigation section */
+  #ctn1 a,
+  #ctn2 a,
+  #ctn3 a,
+  #ctn4 a,
+  #ctn5 a,
+  #ctn6 a {
+    top: -90px;
+  }
+
+  /* Increase size of home icon without increasing link font size */
+  .tablet-font {
+    font-size: 2em;
+  }
+
+  .criteria {
+    max-height: auto;
+  }
+}
+
 /*****************************************************/
