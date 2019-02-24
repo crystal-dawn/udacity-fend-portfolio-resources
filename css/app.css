@@ -198,10 +198,12 @@ body {
 .resource {
   font-family: Arial;
   margin: 1%;
+  padding: 1%;
   background-color: white;
-  border: 2px groove var(--secondary-color-dark);
+  border: 2px groove var(--secondary-color-light);
   border-radius: 5px;
   box-shadow: 2px 1px 6px var(--secondary-color-light);
+  display: inline-flex;
 }
 
 .resource:hover {
@@ -213,6 +215,11 @@ body {
   color: var(--secondary-color-dark);
 }
 
+/* Keep Shared By on a single line */
+.credit {
+  font-size: .85em;
+  white-space: nowrap;
+}
 /******************************************************
                 Anchor link positioning
 ******************************************************/
@@ -272,6 +279,10 @@ body {
   .tablet-font {
     font-size: 2em;
   }
+
+  .criteria:nth-last-child(-n+2) {
+    margin-bottom: 5%;
+  }
 }
 
 /*******************************************************************************
@@ -298,5 +309,3 @@ body {
     max-height: auto;
   }
 }
-
-/*****************************************************/
