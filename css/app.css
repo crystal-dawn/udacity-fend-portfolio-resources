@@ -47,6 +47,7 @@ body {
 .top-nav {
   z-index: 1;
   top: 5%;
+  font-size: .85rem;
 }
 
 /************************
@@ -60,7 +61,7 @@ body {
 .dropdown-button {
   /* Important for vertical align on mobile phones */
   margin: 0;
-  padding: 2%;
+  padding: 1% 2%;
   color: var(--secondary-color-dark);
   border: none;
   outline: none;
@@ -208,7 +209,7 @@ body {
   background-color: var(--primary-color);
 }
 
-.link {
+.resource-link {
   text-decoration: none;
   color: var(--secondary-color-dark);
 }
@@ -234,5 +235,23 @@ body {
 #ctn5 a,
 #ctn6 a {
   position: absolute;
-  top: -80px;
+  top: -75px;
 }
+
+/*******************************************************************************
+                            Tablet Layout
+*******************************************************************************/
+@media only screen and (min-width: 426px) {
+  /* Keep clicked link header below the top navigation section */
+  #ctn1 a,
+  #ctn2 a,
+  #ctn3 a,
+  #ctn4 a,
+  #ctn5 a,
+  #ctn6 a {
+    position: absolute;
+    top: -80px;
+  }
+}
+
+/*****************************************************/
