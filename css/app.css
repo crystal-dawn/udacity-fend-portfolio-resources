@@ -180,7 +180,7 @@ body {
 
 /* Keep last card from being beneath the bottom nav */
 .criteria:last-child {
-  margin-bottom: 15%;
+  margin-bottom: 5%;
 }
 
 /****************** Type subsection ******************/
@@ -220,6 +220,7 @@ body {
   font-size: .85em;
   white-space: nowrap;
 }
+
 /******************************************************
                 Anchor link positioning
 ******************************************************/
@@ -280,8 +281,8 @@ body {
     font-size: 2em;
   }
 
-  .criteria:nth-last-child(-n+2) {
-    margin-bottom: 5%;
+  .criteria:last-child {
+    margin-bottom: 25%;
   }
 }
 
@@ -297,7 +298,7 @@ body {
   #ctn4 a,
   #ctn5 a,
   #ctn6 a {
-    top: -90px;
+  top: -90px;
   }
 
   /* Increase size of home icon without increasing link font size */
@@ -307,5 +308,13 @@ body {
 
   .criteria {
     max-height: auto;
+  }
+
+  .criteria:last-child{
+    margin-bottom: 5%;
+  }
+
+  .page-header {
+    font-size: 3em;
   }
 }
